@@ -1,7 +1,7 @@
-**** PnL Calculator (FIFO / LIFO) ****
--This project implements a command-line tool to calculate realized PnL (Profit & Loss) from a sequence of trades using either FIFO (First In, First Out) or LIFO (Last In, First Out) accounting.
+# PnL Calculator (FIFO / LIFO)
+This tool calculates realized PnL from trades using either **FIFO**  or **LIFO**.
 
-**** Project Structure ****
+## Project Structure
 pnl-calculator/
   src/pnl_calculator/
     __init__.py
@@ -23,17 +23,17 @@ PYTHONPATH=src python -m pnl_calculator.cli sample_data/trades.csv fifo
 PYTHONPATH=src python -m pnl_calculator.cli sample_data/trades.csv lifo
 
 
-**** Expected output -FIFO ****
+## Expected output (FIFO)
 TIMESTAMP,SYMBOL,PNL
 103,TFS,32.50
 104,TFS,2.50
 
-**** Expected output -LIFO ****
+## Expected output (LIFO)
 TIMESTAMP,SYMBOL,PNL
 103,TFS,17.50
 104,TFS,17.50
 
-**** Run the Tests ****
+## Run the Tests
 - Create and activate a virtual environment (optional but recommended)
 
 python3 -m venv .venv
@@ -41,12 +41,12 @@ source .venv/bin/activate
 pip install -U pip
 pip install pytest
 
-- Run tests
+## Run the Tests
 
 pytest -q
 
 
-- Results:
+## Results:
 
 ...
 
