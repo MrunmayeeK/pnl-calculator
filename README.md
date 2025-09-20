@@ -16,7 +16,6 @@ pnl-calculator/
     test_core.py     # pytest unit tests
 README.md
 
-**** Quick Run (From the project Root) ****
 # FIFO mode
 PYTHONPATH=src python -m pnl_calculator.cli sample_data/trades.csv fifo
 
